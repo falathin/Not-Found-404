@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permintaan Maaf - Pengembangan Program</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 flex items-center justify-center min-h-screen">
+
+    <div class="gradient-bg max-w-lg w-full p-8 rounded-xl shadow-xl">
+        <div class="text-center text-white">
+            <h1 class="text-4xl font-bold mb-6 animate__animated animate__fadeInDown">Mohon Maaf</h1>
+            <p class="text-lg mb-4 animate__animated animate__fadeIn animate__delay-1s">
+                Program ini masih dalam tahap pengembangan. Kami mohon maaf atas ketidaknyamanan yang terjadi.
+                Tim kami sedang bekerja keras untuk menyempurnakan fitur-fitur agar lebih baik lagi.
+            </p>
+            <p class="text-sm mb-6 animate__animated animate__fadeIn animate__delay-2s">
+                Kami menghargai kesabaran Anda dan berharap Anda dapat kembali lagi saat program ini sudah siap
+                sepenuhnya.
+            </p>
+            <div>
+                <button onclick="goBack()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 rounded-full text-lg shadow-lg transform transition duration-200 ease-in-out hover:scale-105">
+                    Kembali
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            if (window.history.length > 1) {
+                window.history.back(); // Mengembalikan pengguna ke halaman sebelumnya
+            } else {
+                window.location.href = "/"; // Jika tidak ada riwayat, mengarahkan ke halaman utama
+            }
+        }
+    </script>
+
+</body>
+
+</html>
